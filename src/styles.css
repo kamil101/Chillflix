@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.app-title {
+    color: white;
+    background-color: black;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
