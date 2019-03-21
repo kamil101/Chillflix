@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 .app-title {
-    color: white;
-    background-color: black;
+  background-color: black;
+  color: red;
 }
 
 body {
-    color: white;
-    background-color: black;
+  background-color: black;
+  color: rgb(190, 17, 17);
 }
