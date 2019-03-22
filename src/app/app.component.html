@@ -7,6 +7,15 @@
     src="https://dimamukhin.github.io/ChillFlix/src/ChillFlix_logo.png"
   />
 </div>
+
+<div class="row">
+  <app-movie class="col" *ngFor="let film of films" [film]="film"></app-movie>
+</div>
+<div class="row">
+  <app-movie class="col" *ngFor="let film of films" [film]="film"></app-movie>
+</div>
+
+<!--
 <br />
 
 <h1>All Movies</h1>
@@ -62,6 +71,6 @@
       >
     </h2>
   </li>
-</ul>
+</ul> -->
 
 <router-outlet></router-outlet>
