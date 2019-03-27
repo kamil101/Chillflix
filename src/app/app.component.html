@@ -1,44 +1,76 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>Welcome to {{ title }}!</h1>
+  <h1 class="app-title">Welcome to <br /></h1>
   <img
-    width="4q00"
+    width="300"
     alt="Angular Logo"
-    src="https://pl.scdn.co/images/pl/default/c357dd2fe1a28d3b790d9e6d2458c603855838ae"
+    src="https://dimamukhin.github.io/ChillFlix/src/ChillFlix_logo.png"
   />
 </div>
-<h2>English Movies 2019-2018:</h2>
+
+<div class="row">
+  <app-movie class="col" *ngFor="let film of films" [film]="film"></app-movie>
+</div>
+<div class="row">
+  <app-movie class="col" *ngFor="let film of films" [film]="film"></app-movie>
+</div>
+
+<!--
+<br />
+
+<h1>All Movies</h1>
+
 <ul>
+  <li>
+    <h2>Animal life</h2>
+  </li>
   <li>
     <h2>
       <a
         target="_blank"
         rel="noopener"
-        href="https://www.youtube.com/watch?v=le4cUS0myfo"
-        >Romantic Comedy Movies 2019
+        href="https://www.youtube.com/watch?v=88-JKzAebLo"
+        >Strange Animals of Asia</a
+      >
+    </h2>
+  </li>
+
+  <li>
+    <h2>
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://www.youtube.com/watch?v=1jPQu4GNj40"
+        >Wild Animals Life</a
+      >
+    </h2>
+  </li>
+  <li>
+    <h2>Drama Movies</h2>
+  </li>
+  <li>
+    <h2>
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://www.youtube.com/watch?v=0SQApNrajjM"
+        >Good Enough (Full Movie) Comedy Drama ❤
       </a>
     </h2>
   </li>
   <li>
-    <h2>
-      <a
-        target="_blank"
-        rel="noopener"
-        href="https://www.youtube.com/watch?v=X-ZD4ysxGqw"
-        >The Deadly Gift - Crime Action Movies</a
-      >
-    </h2>
+    <h2>Comedy Movies</h2>
   </li>
   <li>
     <h2>
       <a
         target="_blank"
         rel="noopener"
-        href="https://www.youtube.com/watch?v=1drLSMiyOX0"
-        >Fighter</a
+        href="https://www.youtube.com/watch?v=pjqONTXvo2o"
+        >Romantic Comedy Movies 2019</a
       >
     </h2>
   </li>
-</ul>
+</ul> -->
 
 <router-outlet></router-outlet>
