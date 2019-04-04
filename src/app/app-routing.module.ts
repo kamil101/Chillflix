@@ -10,7 +10,7 @@ const routes: Routes = [
     component: MainComponent
   },
   {
-    path: 'watch',
+    path: 'watch/:url',
     component: LiveComponent
   }
 ];

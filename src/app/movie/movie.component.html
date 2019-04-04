@@ -1,15 +1,13 @@
 <div>
-  <h2>{{ film.title }}</h2>
+  <h4>{{ film.title }}</h4>
 
-  <iframe
-    width="{{ filmWidth }}"
-    height="{{ filmHeight }}"
-    [src]="film.url | safe"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-  <p>Film Title : {{ film.title }}</p>
+  <img
+    src="https://img.youtube.com/vi/{{ film.url }}/0.jpg"
+    [height]="filmHeight"
+    [width]="filmWidth"
+    routerLink="watch/{{ film.url }}"
+  />
+  <!-- <p>Film Title : {{ film.title }}</p>
   <p>Film Release Date : {{ film.releaseDate }}</p>
-  <p>Film Director : {{ film.director }}</p>
+  <p>Film Director : {{ film.director }}</p> -->
 </div>
