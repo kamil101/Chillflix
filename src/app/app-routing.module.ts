@@ -4,6 +4,7 @@ import { MovieComponent } from './movie/movie.component';
 import { MainComponent } from './main/main.component';
 import { LiveComponent } from './live/live.component';
 import { from } from 'rxjs';
+import { AdministrationComponent } from './administration/administration.component';
 const routes: Routes = [
   {
     path: '',
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'watch/:url',
     component: LiveComponent
+  },
+  {
+    path: 'admin',
+    component: AdministrationComponent
   }
 ];
 

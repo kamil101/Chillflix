@@ -8,6 +8,8 @@ import { SafePipe } from './shered/safe.pipe';
 import { MainComponent } from './main/main.component';
 import { LiveComponent } from './live/live.component';
 import { CategoryComponent } from './category/category.component';
+import { AdministrationComponent } from './administration/administration.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,10 @@ import { CategoryComponent } from './category/category.component';
     SafePipe,
     MainComponent,
     LiveComponent,
-    CategoryComponent
+    CategoryComponent,
+    AdministrationComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
